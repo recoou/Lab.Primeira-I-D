@@ -45,7 +45,9 @@ review these documents carefully, as they describe your rights and restrictions 
 
 
 ## 1. Introduction
-> This section is usually entitled “Introduction
+
+  Na atualidade, com o avanço da tecnologia, uma função vem se tornando cada vez mais útil. Desde aplicativos como Waze e Google Maps, até jogos como Pokemon GO, a função de geolocalização se mostra indispensável nesse mundo moderno.
+  O serviço de indentificação do GPOS é implementado na RFC1712 sobre DNS, portanto está implementação visa conseguir a geolocalização do servidor que o cliente está se comunicando através de uma mensagem HTTP, ou seja, implementar o serviço sobre HTTP ao invés de DNS.
 
 ## 2. Conventions used in this document
 In examples, "C:" and "S:" indicate lines sent by the client and server respectively.
@@ -55,8 +57,11 @@ In this document, these words will appear with that interpretation   only when i
 
 In this document, the characters ">>" preceding an indented line(s)   indicates a statement using the key words listed above. This convention aids reviewers in quickly identifying or finding the portions of this RFC covered by these keywords.
 
-## 3. Section 2 heading as appropriate
->Text for this section
+## 3. Hendling the GEOgraphys
+
+Uma requisição GET HTTP deve incluir um campo chamado GPOS: nome_dispositivo.
+
+O servidor deve retornar uma resposta no formato: nome_dispositivo ttl class GPOS longitude latitude altitude.
 
 ## 4. Security Considerations
 
