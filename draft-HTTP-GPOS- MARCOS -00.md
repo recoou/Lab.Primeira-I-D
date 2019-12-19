@@ -1,4 +1,4 @@
-**Working Group Name**  **Initial. Lastname**
+**Working Group Name**  **MARCOS. SILVA**
   
 Internet Draft         DComp/UFS
 
